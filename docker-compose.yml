@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  back:
+    build: ./back
+    command: yarn dev
+    container_name: back_end
+    ports:
+      - 4000:4000
+    volumes:
+      - ./back:/usr/app
+  front:
+    image: node
+    build: ./front
+    command: yarn start
+    container_name: front-end
+    ports:
+      - 3000:3000
+    volumes:
+      - ./front:/usr/app

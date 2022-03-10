@@ -1,0 +1,19 @@
+.card {
+  margin-bottom: 50px;
+
+  span {
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(255, 81, 0);
+  }
+
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    // text-decoration: underline;
+  }
+
+  > p {
+    margin-bottom: 10px;
+  }
+}
